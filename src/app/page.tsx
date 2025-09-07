@@ -38,12 +38,12 @@ export default function Home() {
                 <div className="relative h-80">
                   <Image
                     src="https://picsum.photos/800/600"
-                    alt="Artisanal soaps"
+                    alt="Artisanal soaps with coconut oil"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    data-ai-hint="artisanal soap"
+                    data-ai-hint="soap coconut"
                   />
-                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-green-900/40 flex items-center justify-center">
                     <h3 className="text-4xl font-headline text-white font-bold">Soaps</h3>
                   </div>
                 </div>
@@ -56,12 +56,12 @@ export default function Home() {
                 <div className="relative h-80">
                   <Image
                     src="https://picsum.photos/800/600"
-                    alt="Healthy food mixes"
+                    alt="Healthy food mix ingredients like beetroot, apple, and carrot"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    data-ai-hint="health food"
+                    data-ai-hint="beetroot apple"
                   />
-                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-red-900/40 flex items-center justify-center">
                     <h3 className="text-4xl font-headline text-white font-bold">Health Mixes</h3>
                   </div>
                 </div>
