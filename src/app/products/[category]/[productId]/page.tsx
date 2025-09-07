@@ -1,6 +1,7 @@
+
 "use client";
 
-import React, { useState, use } from 'react';
+import React from 'react';
 import { products } from '@/lib/products';
 import { notFound, useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -10,19 +11,20 @@ import { QuantitySelector } from '@/components/QuantitySelector';
 import { useToast } from '@/hooks/use-toast';
 import { ShoppingCart, CheckCircle, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
+import { BackButton } from '@/components/BackButton';
 
 type Props = {
-  params: Promise<{
+  params: {
     category: string;
     productId: string;
-  }>;
+  };
 };
 
 export default function ProductDetailPage({ params }: Props) {
-  const { category, productId } = use(params);
+  const { category, productId } = params;
   const product = products.find(p => p.category === category && p.id === productId);
   const { addToCart } = useCart();
-  const [quantity, setQuantity] = useState(1);
+  const [quantity, setQuantity] = React.useState(1);
   const { toast } = useToast();
   const router = useRouter();
 
@@ -47,8 +49,11 @@ export default function ProductDetailPage({ params }: Props) {
   const categoryTitle = category === 'soaps' ? 'Soaps' : 'Health Mixes';
 
   return (
-    <div>
-       <div className="mb-6 flex items-center gap-2 text-sm text-muted-foreground">
+    <div className="relative">
+       <div className="absolute top-0 left-0 z-10">
+        <BackButton />
+      </div>
+       <div className="mb-6 flex items-center justify-center gap-2 text-sm text-muted-foreground pt-16">
         <Link href="/" className="hover:text-foreground">Home</Link>
         <ChevronRight className="h-4 w-4" />
         <Link href={`/products/${category}`} className="hover:text-foreground">{categoryTitle}</Link>
