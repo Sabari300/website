@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, use } from 'react';
 import { products } from '@/lib/products';
 import { notFound, useRouter } from 'next/navigation';
 import Image from 'next/image';
@@ -12,14 +12,14 @@ import { ShoppingCart, CheckCircle, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 
 type Props = {
-  params: {
+  params: Promise<{
     category: string;
     productId: string;
-  };
+  }>;
 };
 
 export default function ProductDetailPage({ params }: Props) {
-  const { category, productId } = params;
+  const { category, productId } = use(params);
   const product = products.find(p => p.category === category && p.id === productId);
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
