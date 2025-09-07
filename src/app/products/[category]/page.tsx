@@ -2,7 +2,9 @@ import { products } from '@/lib/products';
 import { ProductCard } from '@/components/ProductCard';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, List } from 'lucide-react';
+import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 type Props = {
   params: { category: string };
@@ -26,11 +28,23 @@ export default function CategoryPage({ params }: Props) {
         <span className="text-foreground">{categoryTitle}</span>
       </div>
       <h1 className="text-4xl font-headline font-bold mb-8">{categoryTitle}</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProducts.map(product => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
+      
+      <Tabs defaultValue="all">
+        <TabsList>
+          <TabsTrigger value="all"><List className="mr-2" />All</TabsTrigger>
+        </TabsList>
+        <TabsContent value="all" className="mt-6">
+          <Card>
+            <CardContent className="pt-6">
+               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {filteredProducts.map(product => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+      </Tabs>
     </div>
   );
 }
