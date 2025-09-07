@@ -2,8 +2,7 @@ import type { Product } from '@/lib/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ViewDetailsButton } from './ViewDetailsButton';
 
 interface ProductCardProps {
   product: Product;
@@ -34,12 +33,7 @@ export function ProductCard({ product }: ProductCardProps) {
       </CardContent>
       <CardFooter className="p-4 flex justify-between items-center">
         <p className="text-lg font-bold">${product.price.toFixed(2)}</p>
-        <Button asChild variant="secondary" size="sm">
-          <Link href={`/products/${product.category}/${product.id}`}>
-            View Details
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
+        <ViewDetailsButton category={product.category} productId={product.id} />
       </CardFooter>
     </Card>
   );
