@@ -6,7 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { CartProvider } from '@/context/CartContext';
 
 export const metadata: Metadata = {
-  title: 'FreshCart',
+  title: 'Azhagu',
   description: 'Natural Soaps and Health Mixes',
 };
 

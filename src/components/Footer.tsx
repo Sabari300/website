@@ -7,9 +7,9 @@ export function Footer() {
       <div className="container mx-auto px-4 py-6 text-center text-muted-foreground">
         <div className="flex justify-center items-center gap-2 mb-2">
            <Leaf className="w-5 h-5 text-primary" />
-           <p className="font-headline text-lg text-foreground">FreshCart</p>
+           <p className="font-headline text-lg text-foreground">Azhagu</p>
         </div>
-        <p>&copy; {new Date().getFullYear()} FreshCart. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Azhagu. All rights reserved.</p>
         <p className="text-sm mt-2">Natural Soaps and Health Mixes, made with care.</p>
       </div>
     </footer>

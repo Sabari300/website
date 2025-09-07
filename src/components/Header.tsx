@@ -30,7 +30,7 @@ export function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center h-16">
         <Link href="/" className="flex items-center gap-2 text-2xl font-headline font-bold text-primary">
           <Leaf className="w-7 h-7" />
-          FreshCart
+          Azhagu
         </Link>
         <nav className="hidden md:flex items-center gap-6 text-sm font-semibold">
           <Link href="/products/soaps" className="hover:text-primary transition-colors">Soaps</Link>

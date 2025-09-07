@@ -11,7 +11,7 @@ export default function SignupPage() {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-headline">Create an Account</CardTitle>
-          <CardDescription>Join FreshCart to start shopping</CardDescription>
+          <CardDescription>Join Azhagu to start shopping</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
            <div className="space-y-2">

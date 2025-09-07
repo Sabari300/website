@@ -17,7 +17,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-headline">Welcome Back</CardTitle>
-          <CardDescription>Log in to your FreshCart account</CardDescription>
+          <CardDescription>Log in to your Azhagu account</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="space-y-2">
