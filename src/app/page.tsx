@@ -1,3 +1,75 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Sparkles } from 'lucide-react';
+
 export default function Home() {
-  return <></>;
+  return (
+    <div className="space-y-16">
+      {/* Hero Section */}
+      <section className="text-center">
+        <h1 className="text-4xl md:text-6xl font-headline font-bold tracking-tight mb-4">
+          Purely Natural, Simply Good.
+        </h1>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+          Discover our handcrafted soaps and wholesome health mixes, made with the finest natural ingredients for a healthier you.
+        </p>
+        <div className="flex gap-4 justify-center">
+          <Button size="lg" asChild>
+            <Link href="#categories">Shop Now</Link>
+          </Button>
+          <Button size="lg" variant="outline" asChild>
+            <Link href="/admin/generate-description">
+              <Sparkles className="mr-2 h-4 w-4" />
+              AI Description Tool
+            </Link>
+          </Button>
+        </div>
+      </section>
+
+      {/* Categories Section */}
+      <section id="categories" className="scroll-mt-20">
+        <h2 className="text-3xl font-headline font-bold text-center mb-8">Our Collections</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Link href="/products/soaps" className="block">
+            <Card className="overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-0">
+                <div className="relative h-80">
+                  <Image
+                    src="https://picsum.photos/800/600"
+                    alt="Artisanal soaps"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    data-ai-hint="artisanal soap"
+                  />
+                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                    <h3 className="text-4xl font-headline text-white font-bold">Soaps</h3>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
+          <Link href="/products/health-mixes" className="block">
+            <Card className="overflow-hidden group hover:shadow-xl transition-shadow duration-300">
+              <CardContent className="p-0">
+                <div className="relative h-80">
+                  <Image
+                    src="https://picsum.photos/800/600"
+                    alt="Healthy food mixes"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    data-ai-hint="health food"
+                  />
+                  <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                    <h3 className="text-4xl font-headline text-white font-bold">Health Mixes</h3>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
 }
