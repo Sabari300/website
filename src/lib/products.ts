@@ -4,12 +4,12 @@ export const products: Product[] = [
   // Soaps (5 varieties)
   {
     id: 'soap-1',
-    name: 'Lavender Dream Soap',
+    name: 'Neem Soap',
     category: 'soaps',
-    description: 'A calming and relaxing soap infused with pure lavender essential oil. Perfect for a soothing bath before bed.',
-    price: 7.99,
-    image: 'https://picsum.photos/600/400',
-    dataAiHint: 'lavender soap'
+    description: 'A natural soap infused with neem extracts, known for its antibacterial and purifying properties. Excellent for keeping skin clear and healthy.',
+    price: 45,
+    image: '/neemsoap.jpg',
+    dataAiHint: 'neem soap'
   },
   {
     id: 'soap-2',
