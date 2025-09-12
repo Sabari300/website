@@ -32,12 +32,12 @@ export const products: Product[] = [
   },
   {
     id: 'soap-4',
-    name: 'Charcoal Detox Soap',
+    name: 'Multani Mitti Soap',
     category: 'soaps',
     description: 'Activated charcoal works to draw out impurities, leaving your skin feeling clean and purified.',
-    price: 8.99,
-    image: 'https://picsum.photos/600/400',
-    dataAiHint: 'charcoal soap'
+    price: 45,
+    image: '/Multanisoap.jpg',
+    dataAiHint: 'multani mitti soap'
   },
   {
     id: 'soap-5',
