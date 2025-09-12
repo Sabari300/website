@@ -1,3 +1,4 @@
+
 import type { Product } from './types';
 
 export const products: Product[] = [
@@ -22,12 +23,12 @@ export const products: Product[] = [
   },
   {
     id: 'soap-3',
-    name: 'Oatmeal & Honey Soap',
+    name: 'papaya Soap',
     category: 'soaps',
     description: 'Gently exfoliate and moisturize with the natural goodness of oatmeal and raw honey. Ideal for sensitive skin.',
-    price: 8.49,
-    image: 'https://picsum.photos/600/400',
-    dataAiHint: 'oatmeal soap'
+    price: 45,
+    image: '/papaya.jpg',
+    dataAiHint: 'papaya soap'
   },
   {
     id: 'soap-4',
