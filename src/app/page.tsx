@@ -32,11 +32,11 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="https://picsum.photos/seed/soaps-collection/800/600"
-                    alt="Artisanal soaps with coconut oil"
+                    src="/images/azhagu-soaps-collection.jpg"
+                    alt="A collection of Azhagu handmade soaps with natural ingredients like coconut, papaya, and aloe vera."
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    data-ai-hint="soap coconut"
+                    data-ai-hint="soap collection"
                   />
                   <div className="absolute inset-0 bg-green-900/0 group-hover:bg-green-900/40 transition-all duration-300 flex items-center justify-center">
                     <h3 className="text-4xl font-headline text-white font-bold">Soaps</h3>
