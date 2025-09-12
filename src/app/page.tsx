@@ -27,12 +27,12 @@ export default function Home() {
       <section id="categories" className="scroll-mt-20">
         <h2 className="text-3xl font-headline font-bold text-center mb-8">Our Collections</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/products/soaps" className="block group">
+          <Link href="/products/soaps" className="block">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative h-80">
                     <Image
-                      src="/images/azhagu-soaps-collection.jpg"
+                      src="/azhagu-soaps-collection.jpg"
                       alt="Handmade soaps"
                       fill
                       className="object-fill"
@@ -45,12 +45,12 @@ export default function Home() {
               </CardContent>
             </Card>
           </Link>
-          <Link href="/products/health-mixes" className="block group">
+          <Link href="/products/health-mixes" className="block">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="/images/health-mix-collection.jpg"
+                    src="/health-mix-collection.jpg"
                     alt="Healthy food mix ingredients like beetroot, apple, and carrot"
                     fill
                     className="object-cover"
