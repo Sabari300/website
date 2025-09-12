@@ -41,12 +41,12 @@ export const products: Product[] = [
   },
   {
     id: 'soap-5',
-    name: 'Minty Fresh Soap',
+    name: 'Charcoal Soap',
     category: 'soaps',
     description: 'A cool and invigorating soap with peppermint and tea tree oil. Provides a tingly clean feeling.',
-    price: 7.99,
+    price: 86,
     image: 'https://picsum.photos/600/400',
-    dataAiHint: 'mint soap'
+    dataAiHint: 'charcoal soap'
   },
   // Health Mix (2 types)
   {
