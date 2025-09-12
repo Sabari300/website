@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -37,7 +38,7 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="https://picsum.photos/800/600"
+                    src="https://picsum.photos/seed/soaps/800/600"
                     alt="Artisanal soaps with coconut oil"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -55,7 +56,7 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="https://picsum.photos/800/600"
+                    src="https://picsum.photos/seed/health/800/600"
                     alt="Healthy food mix ingredients like beetroot, apple, and carrot"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
