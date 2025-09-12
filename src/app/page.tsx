@@ -27,7 +27,7 @@ export default function Home() {
       <section id="categories" className="scroll-mt-20">
         <h2 className="text-3xl font-headline font-bold text-center mb-8">Our Collections</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <Link href="/products/soaps" className="block">
+          <Link href="/products/soaps" className="block group">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative h-80">
@@ -35,7 +35,7 @@ export default function Home() {
                       src="/azhagu-soaps-collection.jpg"
                       alt="Handmade soaps"
                       fill
-                      className="object-fill"
+                      className="object-fill transition-transform duration-300 group-hover:scale-105"
                       data-ai-hint="soap collection"
                     />
                   <div className="absolute inset-0 bg-green-900/0 flex items-center justify-center">
@@ -45,7 +45,7 @@ export default function Home() {
               </CardContent>
             </Card>
           </Link>
-          <Link href="/products/health-mixes" className="block">
+          <Link href="/products/health-mixes" className="block group">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative h-80">
@@ -53,7 +53,7 @@ export default function Home() {
                     src="/health-mix-collection.jpg"
                     alt="Healthy food mix ingredients like beetroot, apple, and carrot"
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
                     data-ai-hint="beetroot apple"
                   />
                   <div className="absolute inset-0 bg-red-900/0 flex items-center justify-center">
