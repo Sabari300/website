@@ -31,13 +31,13 @@ export default function Home() {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <CardContent className="p-0">
                 <div className="relative h-80">
-                  <Image
-                    src="/images/azhagu-soaps-collection.jpg"
-                    alt="A collection of Azhagu handmade soaps with natural ingredients like coconut, papaya, and aloe vera."
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    data-ai-hint="soap collection"
-                  />
+                    <Image
+                      src="/images/azhagu-soaps-collection.jpg"
+                      alt="Handmade soaps"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
                   <div className="absolute inset-0 bg-green-900/0 group-hover:bg-green-900/40 transition-all duration-300 flex items-center justify-center">
                     <h3 className="text-4xl font-headline text-white font-bold">Soaps</h3>
                   </div>
