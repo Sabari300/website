@@ -32,7 +32,7 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="/images/azhagu-soaps-collection.jpg"
+                    src="https://picsum.photos/seed/soaps/800/600"
                     alt="A collection of Azhagu handmade soaps with natural ingredients like coconut, papaya, and aloe vera."
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
