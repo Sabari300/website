@@ -4,10 +4,14 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { UserPlus } from "lucide-react";
 import Link from "next/link";
+import { BackButton } from "@/components/BackButton";
 
 export default function SignupPage() {
   return (
-    <div className="flex items-center justify-center py-12">
+    <div className="relative flex items-center justify-center py-12">
+      <div className="absolute top-0 left-0 z-10">
+        <BackButton />
+      </div>
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-3xl font-headline">Create an Account</CardTitle>

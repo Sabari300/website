@@ -6,6 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import { Package, User, History, Truck } from "lucide-react";
+import { BackButton } from "@/components/BackButton";
 
 // Mock Data
 const user = {
@@ -50,7 +51,10 @@ const orderTracking = {
 
 export default function AccountPage() {
   return (
-    <div>
+    <div className="relative pt-16">
+      <div className="absolute top-0 left-0 z-10">
+        <BackButton />
+      </div>
       <div className="flex items-center gap-4 mb-8">
         <Avatar className="h-20 w-20">
           <AvatarImage src={user.avatarUrl} alt={user.name} data-ai-hint="person face" />
