@@ -13,12 +13,12 @@ export const products: Product[] = [
   },
   {
     id: 'soap-2',
-    name: 'Citrus Burst Soap',
+    name: 'Alovera Soap',
     category: 'soaps',
-    description: 'Energize your senses with a zesty blend of lemon, orange, and grapefruit. A refreshing start to your day.',
-    price: 7.99,
-    image: 'https://picsum.photos/600/400',
-    dataAiHint: 'citrus soap'
+    description: 'Soothe and moisturize your skin with the gentle touch of pure Aloe Vera. Perfect for daily hydration and calming irritation.',
+    price: 45,
+    image: '/alovera.jpg',
+    dataAiHint: 'aloe vera soap'
   },
   {
     id: 'soap-3',
