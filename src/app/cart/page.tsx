@@ -20,7 +20,7 @@ export default function CartPage() {
       <div className="text-center py-20">
         <ShoppingCart className="mx-auto h-16 w-16 text-muted-foreground mb-4" />
         <h1 className="text-3xl font-headline font-bold mb-2">Your Cart is Empty</h1>
-        <p className="text-muted-foreground mb-6">Looks like you haven&apos;t added anything to your cart yet.</p>
+        <p className="text-muted-foreground mb-6">Looks like you haven't added anything to your cart yet.</p>
         <Button asChild>
           <Link href="/">Continue Shopping</Link>
         </Button>
@@ -40,7 +40,7 @@ export default function CartPage() {
               </div>
               <div className="flex-grow">
                 <h2 className="font-bold font-headline">{item.name}</h2>
-                <p className="text-sm text-muted-foreground">${item.price.toFixed(2)}</p>
+                <p className="text-sm text-muted-foreground">₹{item.price.toFixed(2)}</p>
               </div>
               <div className="flex items-center gap-2 sm:gap-4">
                 <div className="flex items-center gap-1 sm:gap-2">
@@ -67,7 +67,7 @@ export default function CartPage() {
             <CardContent className="space-y-4">
               <div className="flex justify-between">
                 <span>Subtotal</span>
-                <span className="font-semibold">${subtotal.toFixed(2)}</span>
+                <span className="font-semibold">₹{subtotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span>Shipping</span>
@@ -76,7 +76,7 @@ export default function CartPage() {
               <Separator />
               <div className="flex justify-between font-bold text-lg">
                 <span>Total</span>
-                <span>${subtotal.toFixed(2)}</span>
+                <span>₹{subtotal.toFixed(2)}</span>
               </div>
             </CardContent>
             <CardFooter>

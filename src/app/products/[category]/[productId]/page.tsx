@@ -73,7 +73,7 @@ export default function ProductDetailPage({ params }: Props) {
         </div>
         <div className="flex flex-col justify-center">
           <h1 className="text-4xl lg:text-5xl font-headline font-bold mb-4">{product.name}</h1>
-          <p className="text-2xl font-semibold mb-6 text-primary">${product.price.toFixed(2)}</p>
+          <p className="text-2xl font-semibold mb-6 text-primary">₹{product.price.toFixed(2)}</p>
           <p className="text-muted-foreground mb-8 text-lg">{product.description}</p>
           <div className="flex items-center gap-4 mb-8">
             <QuantitySelector quantity={quantity} setQuantity={setQuantity} />

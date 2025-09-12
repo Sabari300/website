@@ -107,7 +107,7 @@ export default function AccountPage() {
                       </div>
                       <div className="text-right">
                          <Badge variant={order.status === 'Delivered' ? 'default' : 'secondary'} className="mb-1">{order.status}</Badge>
-                         <p className="font-bold text-lg">${order.total.toFixed(2)}</p>
+                         <p className="font-bold text-lg">₹{order.total.toFixed(2)}</p>
                       </div>
                     </div>
                     <div className="space-y-2">
