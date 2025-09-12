@@ -32,14 +32,14 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                     <Image
-                      src="/images/azhagu-soaps-collection.jpg"
+                      src="/images/azhagu-soaps-collection-2.jpg"
                       alt="Handmade soaps"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
                       data-ai-hint="soap collection"
                     />
-                  <div className="absolute inset-0 bg-green-900/0 transition-all duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-green-900/0 flex items-center justify-center">
                     <h3 className="text-4xl font-headline text-white font-bold">Soaps</h3>
                   </div>
                 </div>
@@ -54,10 +54,10 @@ export default function Home() {
                     src="/images/health-mix-collection.jpg"
                     alt="Healthy food mix ingredients like beetroot, apple, and carrot"
                     fill
-                    className="object-cover transition-transform duration-300"
+                    className="object-cover"
                     data-ai-hint="beetroot apple"
                   />
-                  <div className="absolute inset-0 bg-red-900/0 transition-all duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-red-900/0 flex items-center justify-center">
                     <h3 className="text-4xl font-headline text-white font-bold">Health Mixes</h3>
                   </div>
                 </div>
