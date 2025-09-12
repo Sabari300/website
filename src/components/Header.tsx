@@ -35,7 +35,6 @@ export function Header() {
         <nav className="hidden md:flex items-center gap-6 text-sm font-semibold">
           <Link href="/products/soaps" className="hover:text-primary transition-colors">Soaps</Link>
           <Link href="/products/health-mixes" className="hover:text-primary transition-colors">Health Mixes</Link>
-          <Link href="/admin/generate-description" className="hover:text-primary transition-colors">AI Tools</Link>
         </nav>
         <div className="flex items-center gap-4">
           {isLoggedIn ? (

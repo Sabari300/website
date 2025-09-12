@@ -20,12 +20,6 @@ export default function Home() {
           <Button size="lg" asChild>
             <Link href="#categories">Shop Now</Link>
           </Button>
-          <Button size="lg" variant="outline" asChild>
-            <Link href="/admin/generate-description">
-              <Sparkles className="mr-2 h-4 w-4" />
-              AI Description Tool
-            </Link>
-          </Button>
         </div>
       </section>
 
@@ -38,7 +32,7 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="https://picsum.photos/seed/soaps/800/600"
+                    src="https://picsum.photos/seed/soaps-collection/800/600"
                     alt="Artisanal soaps with coconut oil"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -56,7 +50,7 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="https://picsum.photos/seed/health/800/600"
+                    src="https://picsum.photos/seed/health-collection/800/600"
                     alt="Healthy food mix ingredients like beetroot, apple, and carrot"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
