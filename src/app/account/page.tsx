@@ -22,7 +22,7 @@ const orderHistory = [
     total: 32.47,
     status: "Delivered",
     items: [
-      { name: "Lavender Dream Soap", quantity: 2, image: "https://picsum.photos/200/200", dataAiHint: "lavender soap" },
+      { name: "Neem Soap", quantity: 2, image: "/neemsoap.jpg", dataAiHint: "neem soap" },
       { name: "Super Grains Health Mix", quantity: 1, image: "https://picsum.photos/200/200", dataAiHint: "health food" }
     ]
   },
