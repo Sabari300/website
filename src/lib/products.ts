@@ -25,7 +25,7 @@ export const products: Product[] = [
     id: 'soap-3',
     name: 'papaya Soap',
     category: 'soaps',
-    description: 'Gently exfoliate and moisturize with the natural goodness of oatmeal and raw honey. Ideal for sensitive skin.',
+    description: 'Gently exfoliates, brightens skin, reduces blemishes, and nourishes with natural vitamins for glow',
     price: 45,
     image: '/papaya.jpg',
     dataAiHint: 'papaya soap'
