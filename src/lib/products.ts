@@ -45,7 +45,7 @@ export const products: Product[] = [
     category: 'soaps',
     description: 'A cool and invigorating soap with peppermint and tea tree oil. Provides a tingly clean feeling.',
     price: 86,
-    image: 'https://picsum.photos/600/400',
+    image: '/charcoalsoap.jpg',
     dataAiHint: 'charcoal soap'
   },
   // Health Mix (2 types)
