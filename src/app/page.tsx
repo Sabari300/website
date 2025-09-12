@@ -28,7 +28,7 @@ export default function Home() {
         <h2 className="text-3xl font-headline font-bold text-center mb-8">Our Collections</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <Link href="/products/soaps" className="block group">
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative h-80">
                     <Image
@@ -37,8 +37,9 @@ export default function Home() {
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
+                      data-ai-hint="soap collection"
                     />
-                  <div className="absolute inset-0 bg-green-900/0 group-hover:bg-green-900/40 transition-all duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-green-900/0 transition-all duration-300 flex items-center justify-center">
                     <h3 className="text-4xl font-headline text-white font-bold">Soaps</h3>
                   </div>
                 </div>
@@ -46,17 +47,17 @@ export default function Home() {
             </Card>
           </Link>
           <Link href="/products/health-mixes" className="block group">
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <Card className="overflow-hidden">
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="https://picsum.photos/seed/health-collection/800/600"
+                    src="/images/health-mix-collection.jpg"
                     alt="Healthy food mix ingredients like beetroot, apple, and carrot"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover transition-transform duration-300"
                     data-ai-hint="beetroot apple"
                   />
-                  <div className="absolute inset-0 bg-red-900/0 group-hover:bg-red-900/40 transition-all duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-red-900/0 transition-all duration-300 flex items-center justify-center">
                     <h3 className="text-4xl font-headline text-white font-bold">Health Mixes</h3>
                   </div>
                 </div>
