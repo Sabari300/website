@@ -32,11 +32,10 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                     <Image
-                      src="/images/azhagu-soaps-collection-2.jpg"
+                      src="/images/azhagu-soaps-collection.jpg"
                       alt="Handmade soaps"
                       fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
+                      className="object-fill"
                       data-ai-hint="soap collection"
                     />
                   <div className="absolute inset-0 bg-green-900/0 flex items-center justify-center">
