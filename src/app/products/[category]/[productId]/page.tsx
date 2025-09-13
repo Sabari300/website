@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { products } from '@/lib/products';
-import { notFound, useRouter } from 'next/navigation';
+import { notFound, useRouter, useParams } from 'next/navigation';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { useCart } from '@/context/CartContext';
@@ -13,14 +13,8 @@ import { ShoppingCart, CheckCircle, ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { BackButton } from '@/components/BackButton';
 
-type Props = {
-  params: {
-    category: string;
-    productId: string;
-  };
-};
-
-export default function ProductDetailPage({ params }: Props) {
+export default function ProductDetailPage() {
+  const params = useParams() as { category: string; productId: string; };
   const { category, productId } = params;
   const product = products.find(p => p.category === category && p.id === productId);
   const { addToCart } = useCart();

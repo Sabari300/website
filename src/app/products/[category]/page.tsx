@@ -1,18 +1,17 @@
 
+"use client";
+
 import { products } from '@/lib/products';
 import { ProductCard } from '@/components/ProductCard';
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { ChevronRight, List } from 'lucide-react';
 import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { BackButton } from '@/components/BackButton';
 
-type Props = {
-  params: { category: string };
-};
-
-export default function CategoryPage({ params }: Props) {
+export default function CategoryPage() {
+  const params = useParams() as { category: string };
   const { category } = params;
   const filteredProducts = products.filter(p => p.category === category);
 
