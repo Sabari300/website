@@ -50,7 +50,7 @@ export default function Home() {
               <CardContent className="p-0">
                 <div className="relative h-80">
                   <Image
-                    src="/health-mix-collection.jpg"
+                    src="/fffff.jpg"
                     alt="Healthy food mix ingredients like beetroot, apple, and carrot"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
