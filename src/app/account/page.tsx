@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -52,10 +53,10 @@ const orderTracking = {
 export default function AccountPage() {
   return (
     <div className="relative pt-16">
-      <div className="absolute top-0 left-0 z-10">
+      <div className="absolute top-4 left-0 z-10">
         <BackButton />
       </div>
-      <div className="flex items-center gap-4 mb-8">
+      <div className="flex items-center gap-4 mb-8 pt-8">
         <Avatar className="h-20 w-20">
           <AvatarImage src={user.avatarUrl} alt={user.name} data-ai-hint="person face" />
           <AvatarFallback>{user.initials}</AvatarFallback>

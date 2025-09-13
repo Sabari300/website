@@ -20,7 +20,7 @@ export default function CartPage() {
   if (itemCount === 0) {
     return (
       <div className="text-center py-20 relative">
-        <div className="absolute top-0 left-0 z-10">
+        <div className="absolute top-4 left-0 z-10">
           <BackButton />
         </div>
         <ShoppingCart className="mx-auto h-16 w-16 text-muted-foreground mb-4" />
@@ -35,10 +35,10 @@ export default function CartPage() {
 
   return (
     <div className="relative pt-16">
-       <div className="absolute top-0 left-0 z-10">
+       <div className="absolute top-4 left-0 z-10">
         <BackButton />
       </div>
-      <h1 className="text-4xl font-headline font-bold mb-8">Your Cart</h1>
+      <h1 className="text-4xl font-headline font-bold mb-8 pt-8">Your Cart</h1>
       <div className="grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-4">
           {cartItems.map(item => (

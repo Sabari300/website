@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -15,7 +16,7 @@ function GoogleIcon(props: React.SVGProps<SVGSVGElement>) {
 export default function LoginPage() {
   return (
     <div className="relative flex items-center justify-center py-12">
-       <div className="absolute top-0 left-0 z-10">
+       <div className="absolute top-4 left-0 z-10">
         <BackButton />
       </div>
       <Card className="w-full max-w-md">

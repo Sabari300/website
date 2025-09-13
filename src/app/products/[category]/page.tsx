@@ -1,3 +1,4 @@
+
 import { products } from '@/lib/products';
 import { ProductCard } from '@/components/ProductCard';
 import { notFound } from 'next/navigation';
@@ -22,11 +23,11 @@ export default function CategoryPage({ params }: Props) {
   const categoryTitle = category === 'soaps' ? 'Soaps' : 'Health Mixes';
 
   return (
-    <div className="relative">
-      <div className="absolute top-0 left-0 z-10">
+    <div className="relative pt-16">
+      <div className="absolute top-4 left-0 z-10">
         <BackButton />
       </div>
-      <div className="mb-6 flex items-center gap-2 text-sm text-muted-foreground pt-16">
+      <div className="mb-6 flex items-center gap-2 text-sm text-muted-foreground pt-8">
         <Link href="/" className="hover:text-foreground">Home</Link>
         <ChevronRight className="h-4 w-4" />
         <span className="text-foreground">{categoryTitle}</span>
