@@ -51,7 +51,7 @@ export const products: Product[] = [
   // Health Mix (2 types)
   {
     id: 'hm-1',
-    name: 'Health Pluse',
+    name: 'Health Plus',
     category: 'health-mixes',
     description: 'A powerful blend of 15 different grains, nuts, and seeds. A wholesome addition to your daily diet.',
     price: 240,
