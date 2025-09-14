@@ -35,7 +35,7 @@ export default function Home() {
                       src="/azhagu-soaps-collection.jpg"
                       alt="Handmade soaps"
                       fill
-                      className="object-fill transition-transform duration-300 group-hover:scale-105"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
                       data-ai-hint="soap collection"
                     />
                   <div className="absolute inset-0 bg-green-900/0 flex items-center justify-center">
