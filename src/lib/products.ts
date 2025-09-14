@@ -67,4 +67,13 @@ export const products: Product[] = [
     image: '/Blood +.jpg',
     dataAiHint: 'health drink'
   },
+  {
+    id: 'hm-3',
+    name: 'ABC Malt',
+    category: 'health-mixes',
+    description: 'Energy-boosting health drink packed with essential nutrients, delivering rich taste, strength, and daily wellness support.',
+    price: 280,
+    image: '/ABC Malt.jpg',
+    dataAiHint: 'malt drink'
+  },
 ];
