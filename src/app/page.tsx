@@ -30,7 +30,7 @@ export default function Home() {
           <Link href="/products/soaps" className="block group">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
-                <div className="relative h-80">
+                <div className="relative aspect-square">
                     <Image
                       src="/azhagu-soaps-collection.jpg"
                       alt="Handmade soaps"
@@ -48,7 +48,7 @@ export default function Home() {
           <Link href="/products/health-mixes" className="block group">
             <Card className="overflow-hidden">
               <CardContent className="p-0">
-                <div className="relative h-80">
+                <div className="relative aspect-square">
                   <Image
                     src="/3product.jpg"
                     alt="Healthy food mix ingredients like beetroot, apple, and carrot"
