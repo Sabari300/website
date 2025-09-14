@@ -60,11 +60,11 @@ export const products: Product[] = [
   },
   {
     id: 'hm-2',
-    name: 'Chocolate Protein Health Mix',
+    name: 'Blood +',
     category: 'health-mixes',
-    description: 'A delicious and nutritious mix packed with plant-based protein and rich cocoa. Perfect for post-workout recovery.',
-    price: 18.99,
-    image: 'https://picsum.photos/600/400',
-    dataAiHint: 'protein powder'
+    description: 'A specially formulated health mix designed to support and enhance vitality, packed with essential nutrients.',
+    price: 240,
+    image: '/Blood +.jpg',
+    dataAiHint: 'health drink'
   },
 ];
