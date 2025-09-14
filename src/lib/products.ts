@@ -51,11 +51,11 @@ export const products: Product[] = [
   // Health Mix (2 types)
   {
     id: 'hm-1',
-    name: 'Super Grains Health Mix',
+    name: 'Health Pluse',
     category: 'health-mixes',
     description: 'A powerful blend of 15 different grains, nuts, and seeds. A wholesome addition to your daily diet.',
-    price: 15.99,
-    image: 'https://picsum.photos/600/400',
+    price: 240,
+    image: '/sathumavvu1.jpg',
     dataAiHint: 'health food'
   },
   {
